@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		115AF80E2A27E1790078C3C1 /* TouchID_PasswordWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AF80D2A27E1790078C3C1 /* TouchID_PasswordWidget.swift */; };
+		115AF8182A27E2140078C3C1 /* PockKit in Frameworks */ = {isa = PBXBuildFile; productRef = 115AF8172A27E2140078C3C1 /* PockKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115AF8182A27E2140078C3C1 /* PockKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +81,9 @@
 			dependencies = (
 			);
 			name = TouchID_password;
+			packageProductDependencies = (
+				115AF8172A27E2140078C3C1 /* PockKit */,
+			);
 			productName = TouchID_password;
 			productReference = 115AF8092A27E1790078C3C1 /* TouchID_password.pock */;
 			productType = "com.apple.product-type.bundle";
@@ -107,6 +112,9 @@
 				Base,
 			);
 			mainGroup = 115AF7FF2A27E1790078C3C1;
+			packageReferences = (
+				115AF8162A27E2140078C3C1 /* XCRemoteSwiftPackageReference "pockkit" */,
+			);
 			productRefGroup = 115AF80A2A27E1790078C3C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		115AF8162A27E2140078C3C1 /* XCRemoteSwiftPackageReference "pockkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pock/pockkit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		115AF8172A27E2140078C3C1 /* PockKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 115AF8162A27E2140078C3C1 /* XCRemoteSwiftPackageReference "pockkit" */;
+			productName = PockKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 115AF8002A27E1790078C3C1 /* Project object */;
 }
