@@ -1,0 +1,16 @@
+#
+#  Podfile
+#  TouchID_password
+#
+#  Created by Arno Van Eetvelde on 31/05/2023.
+#  
+# 
+
+target 'TouchID_password' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TouchID_password
+  pod 'PockKit'
+
+end
